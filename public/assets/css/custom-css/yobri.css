@@ -1,0 +1,12 @@
+
+.pointer {
+    cursor: pointer;
+}
+.pointer:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+
+.semi-black{
+    color:rgb(107, 106, 106);
+}

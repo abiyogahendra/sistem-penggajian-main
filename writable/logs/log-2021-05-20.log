@@ -1,0 +1,4 @@
+CRITICAL - 2021-05-20 09:39:02 --> Call to undefined function CodeIgniter\locale_set_default()
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\spark(53): require('F:\\Kampus\\proje...')
+#2 {main}

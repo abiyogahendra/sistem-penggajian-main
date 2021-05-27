@@ -1,0 +1,92 @@
+ERROR - 2021-05-26 18:43:43 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-05-26 18:43:43 --> Unable to connect to the database.
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Model.php(174): CodeIgniter\Database\BaseBuilder->get()
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\BaseModel.php(518): CodeIgniter\Model->doFind(false, NULL)
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\app\Controllers\Auth.php(63): CodeIgniter\BaseModel->find()
+#5 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Auth->login()
+#6 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#7 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#10 {main}
+CRITICAL - 2021-05-26 18:53:25 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getall()
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#5 {main}
+ERROR - 2021-05-26 20:29:05 --> mysqli_sql_exception: Table 'sistem_penggajian.user' doesn't exist in F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\app\Controllers\Home.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#10 {main}
+CRITICAL - 2021-05-26 20:29:05 --> Table 'sistem_penggajian.user' doesn't exist
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\app\Controllers\Home.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#10 {main}
+ERROR - 2021-05-26 20:29:27 --> mysqli_sql_exception: Table 'sistem_penggajian.user' doesn't exist in F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\app\Controllers\Home.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#10 {main}
+CRITICAL - 2021-05-26 20:29:27 --> Table 'sistem_penggajian.user' doesn't exist
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\app\Controllers\Home.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#10 {main}
+CRITICAL - 2021-05-26 20:32:20 --> Class 'DB' not found
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#5 {main}
+CRITICAL - 2021-05-26 20:33:42 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#5 {main}
+CRITICAL - 2021-05-26 20:35:34 --> Call to undefined method App\Controllers\Home::table()
+#0 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 F:\Kampus\project\Web\new_project\sistem-penggajian-main\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 F:\Kampus\project\Web\new_project\sistem-penggajian-main\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('F:\\Kampus\\proje...')
+#5 {main}
